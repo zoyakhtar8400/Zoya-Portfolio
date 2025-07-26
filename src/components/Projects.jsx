@@ -16,7 +16,7 @@ const Projects = () => {
     },
     {
       title: "Buddha CRM System",
-      tech: "MERN Stack • Firebase • ESP32",
+      tech: "MERN Stack • Firebase • ReactWebCam",
       description:
         "Complete banquet & service management platform with staff task management.",
       features: [
@@ -138,9 +138,12 @@ const Projects = () => {
 
         <div className="text-center mt-12">
           <p className="text-gray-400 mb-4">
-            And many more MERN stack projects including IoT solutions and advanced web applications!
+            And many more MERN stack projects including IoT solutions and
+            advanced web applications!
             <br />
-            <span className="text-sm italic">*HTML/CSS/JavaScript static projects not included in showcase</span>
+            <span className="text-sm italic">
+              *HTML/CSS/JavaScript static projects not included in showcase
+            </span>
           </p>
           <a
             href="#"
