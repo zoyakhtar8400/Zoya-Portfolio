@@ -133,14 +133,14 @@ const Contact = () => {
               </p>
             </div>
 
-            <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-400/50 transition-all duration-300">
+            {/* <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-purple-400/50 transition-all duration-300">
               <MapPin className="text-purple-400 mb-4" size={32} />
               <h3 className="text-xl font-semibold mb-2">Location</h3>
               <p className="text-gray-300">Gorakhpur, Uttar Pradesh, India</p>
               <p className="text-sm text-gray-400 mt-2">
                 Available for remote work worldwide
               </p>
-            </div>
+            </div> */}
 
             {/* <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
               <h3 className="text-xl font-semibold mb-4">Response Time</h3>
