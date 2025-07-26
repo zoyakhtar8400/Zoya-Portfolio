@@ -52,41 +52,71 @@ const Hero = () => {
             {typedText}
             <span className="animate-pulse">|</span>
           </div>
-          <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto animate-slide-up">
-            Passionate Computer Programmer and Full Stack Developer with
-            hands-on experience in MERN stack development. Proven ability to
-            build scalable, user-centric applications with 16+ live deployed
-            projects across CRM systems, IoT, e-commerce, and AI-driven
-            applications.
+          <p className="text-xl text-gray-400 mb-4 max-w-2xl mx-auto animate-slide-up">
+            <span className="text-white font-semibold">
+              Computer Science Student
+            </span>{" "}
+            &{" "}
+            <span className="text-white font-semibold">
+              Full Stack Developer
+            </span>{" "}
+            specializing in MERN stack.
+          </p>
+          <p className="text-lg text-gray-500 mb-8 max-w-xl mx-auto">
+            Delivered{" "}
+            <span className="text-purple-400 font-bold"> live projects</span>{" "}
+            including CRM systems, IoT solutions, and AI applications.
+            <span className="text-green-400 font-semibold">
+              {" "}
+              "Intern of the Month"
+            </span>{" "}
+            at Shine Infosolution.
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-8 animate-slide-up">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mb-12 animate-slide-up">
           <a
             href="mailto:zoyaakhtar325@gmail.com"
-            className="flex items-center gap-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+            className="flex items-center justify-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25 font-semibold text-lg"
           >
-            <Mail size={20} />
-            Get In Touch
+            <Mail size={22} />
+            Hire Me
           </a>
-          <a
-            href="https://github.com/zoyakhtar8400"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
-          >
-            <Github size={20} />
-            GitHub
-          </a>
-          <a
-            href="https://www.linkedin.com/in/zoya-akhtar-1b28b5307"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center gap-2 bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
-          >
-            <Linkedin size={20} />
-            LinkedIn
-          </a>
+          <div className="flex gap-3">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-gray-800/80 hover:bg-gray-700 px-6 py-4 rounded-full transition-all duration-300 transform hover:scale-105 border border-gray-700 hover:border-gray-600"
+            >
+              <Github size={20} />
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/zoya-akhtar-1b28b5307"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 bg-blue-600/80 hover:bg-blue-700 px-6 py-4 rounded-full transition-all duration-300 transform hover:scale-105 border border-blue-500 hover:border-blue-400"
+            >
+              <Linkedin size={20} />
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div className="flex justify-center gap-8 mb-8 text-sm text-gray-400">
+          <div className="text-center">
+            <div className="text-2xl font-bold text-purple-400">8+</div>
+            <div>Live Projects</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-pink-400">7.6</div>
+            <div>CGPA</div>
+          </div>
+          <div className="text-center">
+            <div className="text-2xl font-bold text-blue-400">2+</div>
+            <div>Internships</div>
+          </div>
         </div>
 
         <div className="animate-bounce">

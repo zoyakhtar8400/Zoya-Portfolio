@@ -1,4 +1,4 @@
-import { Github } from "lucide-react";
+import { Github, ExternalLink, Calendar } from "lucide-react";
 
 const Projects = () => {
   const featuredProjects = [
@@ -13,6 +13,10 @@ const Projects = () => {
         "Personalized recommendations",
       ],
       category: "AI/ML",
+      demoUrl: "#",
+      githubUrl: "#",
+      status: "Live",
+      year: "July-2025",
     },
     {
       title: "Buddha CRM System",
@@ -26,6 +30,10 @@ const Projects = () => {
         "Cloud integration",
       ],
       category: "Full-Stack",
+      demoUrl: "#",
+      githubUrl: "#",
+      status: "Live",
+      year: "July-2025",
     },
     {
       title: "DirtOff Laundry CRM",
@@ -39,6 +47,10 @@ const Projects = () => {
         "Scanner tags",
       ],
       category: "Full-Stack",
+      demoUrl: "#",
+      githubUrl: "#",
+      status: "Live",
+      year: "May-2025",
     },
     {
       title: "Glitzzera Jewelry Store",
@@ -52,6 +64,10 @@ const Projects = () => {
         "Shopping cart",
       ],
       category: "E-commerce",
+      demoUrl: "#",
+      githubUrl: "#",
+      status: "Live",
+      year: "July-2025",
     },
     {
       title: "DinnerBell Food Delivery",
@@ -63,6 +79,10 @@ const Projects = () => {
         "Table reservations",
       ],
       category: "Full-Stack",
+      demoUrl: "#",
+      githubUrl: "#",
+      status: "Live",
+      year: "April-2025",
     },
     {
       title: "RFID Attendance System",
@@ -71,6 +91,10 @@ const Projects = () => {
         "IoT-based real-time attendance system with hardware-software integration.",
       features: ["Real-time tracking", "Hardware integration", "API endpoints"],
       category: "IoT",
+      demoUrl: "#",
+      githubUrl: "#",
+      status: "Live",
+      year: "June-2025",
     },
     {
       title: "Tech Guard SHE",
@@ -79,6 +103,10 @@ const Projects = () => {
         "Women safety platform with SOS alerts and real-time location tracking.",
       features: ["Emergency alerts", "GPS tracking", "Volunteer network"],
       category: "Social Impact",
+      demoUrl: "#",
+      githubUrl: "#",
+      status: "Live",
+      year: "2024-2025",
     },
   ];
 
@@ -99,11 +127,12 @@ const Projects = () => {
           {featuredProjects.map((project, index) => (
             <div
               key={index}
-              className="bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 hover:border-purple-400/50 transition-all duration-300 transform hover:scale-105 group animate-fade-in"
+              className="bg-white/5 backdrop-blur-lg rounded-2xl border border-white/10 hover:border-purple-400/50 transition-all duration-300 transform hover:scale-[1.02] group animate-fade-in overflow-hidden"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="p-8">
-                <div className="flex items-start justify-between mb-4">
+              {/* Project Header */}
+              <div className="p-6 pb-4">
+                <div className="flex items-start justify-between mb-3">
                   <h3 className="text-xl font-semibold text-white group-hover:text-purple-400 transition-colors">
                     {project.title}
                   </h3>
@@ -112,26 +141,47 @@ const Projects = () => {
                   </span>
                 </div>
 
-                <p className="text-sm text-purple-400 mb-3 font-mono">
-                  {project.tech}
-                </p>
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="flex items-center gap-1 text-xs text-gray-400">
+                    <Calendar size={12} />
+                    {project.year}
+                  </div>
+                </div>
 
-                <p className="text-gray-300 mb-4 leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="space-y-2">
-                  <p className="text-sm font-semibold text-gray-400">
-                    Key Features:
-                  </p>
-                  {project.features.map((feature, idx) => (
-                    <div key={idx} className="flex items-center gap-2">
-                      <div className="w-1.5 h-1.5 bg-purple-400 rounded-full"></div>
-                      <span className="text-sm text-gray-300">{feature}</span>
-                    </div>
+                <div className="flex flex-wrap gap-1 mb-4">
+                  {project.tech.split(" • ").map((tech, techIdx) => (
+                    <span
+                      key={techIdx}
+                      className="text-xs px-2 py-1 bg-gray-800/50 text-gray-300 rounded border border-gray-700"
+                    >
+                      {tech}
+                    </span>
                   ))}
                 </div>
               </div>
+
+              {/* Project Content */}
+              <div className="px-6 pb-4">
+                <p className="text-gray-300 mb-4 leading-relaxed text-sm">
+                  {project.description}
+                </p>
+
+                <div className="space-y-2 mb-6">
+                  <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">
+                    Key Features
+                  </p>
+                  <div className="grid grid-cols-1 gap-1">
+                    {project.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center gap-2">
+                        <div className="w-1 h-1 bg-purple-400 rounded-full"></div>
+                        <span className="text-xs text-gray-300">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           ))}
         </div>
@@ -146,13 +196,13 @@ const Projects = () => {
             </span>
           </p>
           <a
-            href="#"
+            href="https://github.com/zoyakhtar8400"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-purple-500/25 font-semibold"
           >
             <Github size={20} />
-            View All Projects
+            View All Projects on GitHub
           </a>
         </div>
       </div>
