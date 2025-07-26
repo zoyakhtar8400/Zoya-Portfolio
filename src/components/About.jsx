@@ -44,9 +44,10 @@ const About = () => {
                 With a{" "}
                 <span className="text-green-400 font-semibold">
                   Computer Science Engineering degree
-                </span>
-                {" "}and proven industry experience, I combine strong technical fundamentals with practical expertise to
-                create innovative solutions that make a difference.
+                </span>{" "}
+                and proven industry experience, I combine strong technical
+                fundamentals with practical expertise to create innovative
+                solutions that make a difference.
               </p>
             </div>
           </div>
@@ -73,7 +74,7 @@ const About = () => {
                   <p className="text-gray-300 font-medium text-lg">
                     12th Grade (PCM)
                   </p>
-                  <p className="text-gray-400 text-sm">UP Board (2021)</p>
+                  <p className="text-gray-400 text-sm">CBSE Board (2021)</p>
                   <p className="text-pink-400 font-semibold">
                     Percentage: 67.9%
                   </p>
@@ -82,7 +83,7 @@ const About = () => {
                   <p className="text-gray-300 font-medium text-lg">
                     10th Grade
                   </p>
-                  <p className="text-gray-400 text-sm">UP Board (2019)</p>
+                  <p className="text-gray-400 text-sm">CBSE Board (2019)</p>
                   <p className="text-blue-400 font-semibold">
                     Percentage: 67.9%
                   </p>
