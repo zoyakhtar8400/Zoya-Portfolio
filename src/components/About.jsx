@@ -61,7 +61,7 @@ const About = () => {
               <div className="space-y-4">
                 <div className="border-l-2 border-purple-400 pl-4">
                   <p className="text-gray-300 font-medium text-lg">
-                    B.Tech Computer Science
+                    B.Tech Computer Science And Engineering
                   </p>
                   <p className="text-gray-400 text-sm">
                     Buddha Institute of Technology (2021-2025)
